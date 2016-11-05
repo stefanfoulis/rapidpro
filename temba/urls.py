@@ -9,6 +9,9 @@ from django.contrib.auth.models import User, AnonymousUser
 from django.conf import settings
 from temba.channels.views import register, sync
 
+import analytics
+analytics.write_key = '123'
+
 # javascript translation packages
 js_info_dict = {
     'packages': (),  # this is empty due to the fact that all translation are in one folder

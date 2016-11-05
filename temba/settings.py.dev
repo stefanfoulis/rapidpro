@@ -23,6 +23,13 @@ TEMBA_HOST = 'rapidpro.ngrok.com'
 # -----------------------------------------------------------------------------------
 # Redis & Cache Configuration (we expect a Redis instance on localhost)
 # -----------------------------------------------------------------------------------
+REDIS_HOST = 'redis'
+REDIS_PORT = 6379
+
+# we use a redis db of 10 for testing so that we maintain caches for dev
+REDIS_DB = 10 if TESTING else 15
+
+BROKER_URL = 'redis://%s:%d/%d' % (REDIS_HOST, REDIS_PORT, REDIS_DB)
 CACHES = {
     "default": {
         "BACKEND": "redis_cache.cache.RedisCache",
@@ -42,7 +49,7 @@ DATABASES = {
         'NAME': 'temba',
         'USER': 'temba',
         'PASSWORD': 'temba',
-        'HOST': 'localhost',
+        'HOST': 'postgres',
         'PORT': '',
         'ATOMIC_REQUESTS': True,
         'OPTIONS': {

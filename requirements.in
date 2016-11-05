@@ -1,0 +1,94 @@
+smartmin
+#-e git+https://github.com/nyaruka/smartmin.git#egg=smartmin
+
+Django==1.8.5
+coverage==4.0.3
+django-celery==3.1.17
+django-compressor==1.5
+django-debug-toolbar==1.2.2
+django-digest==1.13
+django-extensions
+django-guardian
+
+https://github.com/nyaruka/django-modeltranslation/archive/dffebc9363297d77d91c99d46e8e53b32dc05e61.zip#egg=django_modeltranslation
+#http://github.com/nyaruka/django-modeltranslation.git#egg=django_modeltranslation-dev
+
+# only adding my quickblocks fork here because of the ancient Pillow requirement
+# that I can't compile.
+https://github.com/stefanfoulis/django-quickblocks/archive/fix/pillow-dependency.zip#egg=django-quickblocks==0.9.2
+#https://github.com/nyaruka/django-quickblocks/archive/2ac419caff11dad1570f0a56b4576e5e40cfa758.zip#egg=django-quickblocks
+#-e git+http://github.com/nyaruka/django-quickblocks.git#egg=django-quickblocks-dev
+
+django-rosetta==0.6.2
+flake8
+gunicorn==19.3.0
+pisa==3.0.33
+raven==4.0.4
+celery[redis]==3.1.23
+python-gcm
+pytz==2014.7
+hamlpy
+django_select2
+django-redis==3.1.5
+redis==2.10.1
+BeautifulSoup
+xlutils
+phonenumbers
+django-countries==3.0.1
+djangorestframework
+djangorestframework-xml
+
+https://github.com/caktus/django-ttag/archive/40c97c01325d436f5d04529526fa7468ff778137.zip#egg=django-ttag
+#-e git+https://github.com/caktus/django-ttag.git@40c97c01325d436f5d04529526fa7468ff778137#egg=django-ttag-dev
+
+iptools
+
+requests
+# requests==1.2.3   # why?
+
+mock
+selenium==2.31.0
+unidecode
+
+https://github.com/nyaruka/django-celery-transactions/archive/f7adf7f2d5ce0bcd7992e0d4f3624fb96a7d80b8.zip#egg=django-celery-transactions
+#-e git+http://github.com/nyaruka/django-celery-transactions.git#egg=django-celery-transactions
+
+stripe==1.11.0
+dj-database-url==0.2.1
+psycopg2==2.5.2
+django-timezones
+
+https://github.com/nyaruka/django-hstore/archive/86b461464db2ad99f62c3ea15afad4022f5c0df4.zip#egg=django-hstore
+#-e git+http://github.com/nyaruka/django-hstore.git#egg=django-hstore
+
+colorama
+isoweek==1.2.0
+iso639==0.1.1
+twilio
+pycrypto
+numpy
+analytics-python
+django-storages
+boto
+google
+ply
+uservoice
+nose-perfdump
+geojson==1.0.7
+pycountry==1.18
+stop-words
+twython
+enum34
+plivo
+rapidpro-expressions
+python-telegram-bot
+
+#librato-bg
+#https://github.com/nyaruka/python-librato-bg/archive/5a142cda46bc7b585becd4d77b5078818e7357d8.zip#egg=librato_bg
+#-e git+http://github.com/nyaruka/python-librato-bg.git#egg=librato_bg
+
+django-mptt==0.7.4
+openpyxl
+django-excel
+pyexcel-xls
+pyexcel-xlsx
