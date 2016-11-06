@@ -1080,9 +1080,10 @@ class Org(SmartModel):
 
     def create_sample_flows(self, api_url):
         import json
+        from django.contrib.staticfiles import finders
 
-        # get our sample dir
-        filename = os.path.join(settings.STATICFILES_DIRS[0], 'examples', 'sample_flows.json')
+        # Get our sample file
+        filename = finders.find('examples/sample_flows.json')
 
         # for each of our samples
         with open(filename, 'r') as example_file:
